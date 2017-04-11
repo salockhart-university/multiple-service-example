@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCI 4145 - Assignment #4 - Company Inc.</title>
+
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="/mbr">MBR Mortgage Brokers</a></li>
+        <li><a href="/lifeinsurance">Life Insurance</a></li>
+        <li><a href="/companyinc">Company, Inc.</a></li>
+    </ul>
+</nav>
+
+<h1>Company, Inc.</h1>
+
+<div class="container">
+
+    Register:
+    <form id="company-register-form">
+        <input name="name" type="text" placeholder="Name" required><br>
+        <input name="position" type="text" placeholder="Position" required><br>
+        <input name="years" type="number" placeholder="Years" required><br>
+        <input name="salary" type="number" placeholder="Salary" required><br>
+        <input name="password" type="password" placeholder="Password" required><br>
+        <input type="submit">
+    </form>
+
+    <div class="success" id="company-register-success"></div>
+
+</div>
+
+<div class="container">
+
+    Login:
+    <form id="company-login-form">
+        <input name="employeeID" type="text" placeholder="Employee ID" required><br>
+        <input name="password" type="password" placeholder="Password" required><br>
+        <input type="submit">
+    </form>
+
+    <div class="success" id="company-login-success"></div>
+
+</div>
+
+<div class="container transfer-container hidden">
+
+    Transfer:
+    <br>
+    <br>
+    We require your consent to send your personal data to your mortgage broker to assist in your application.
+    <br>
+    <br>
+    The personal data shared will be your:
+    <ul>
+        <li>Name</li>
+        <li>Position</li>
+        <li>Years at the Company</li>
+        <li>Yearly Salary</li>
+    </ul>
+    <form id="company-transfer-form">
+        <input name="mortgageID" type="text" placeholder="Mortgage ID" required><br>
+        <input type="submit" value="I agree, share my data">
+    </form>
+
+    <div class="success" id="company-transfer-success"></div>
+
+</div>
+
+<script src="../common.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCI 4145 - Assignment #4 - MBR</title>
+
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="/mbr">MBR Mortgage Brokers</a></li>
+        <li><a href="/lifeinsurance">Life Insurance</a></li>
+        <li><a href="/companyinc">Company, Inc.</a></li>
+    </ul>
+</nav>
+
+<h1>MBR Mortgage Brokers</h1>
+
+<div class="container">
+
+    Apply for Mortgage:
+    <form id="mortgage-apply-form">
+        <input name="name" type="text" placeholder="Name" required><br>
+        <input name="address" type="text" placeholder="Address" required><br>
+        <input name="phone" type="tel" placeholder="Phone Number" required><br>
+        <input name="employer" type="text" placeholder="Employer's Name" required><br>
+        <input name="insurance" type="text" placeholder="Insurance Company's Name" required><br>
+        <input type="submit">
+    </form>
+
+    <div class="success" id="mortgage-apply-success"></div>
+
+</div>
+
+<div class="container">
+
+    Mortgage Status:
+    <form id="mortgage-status-form">
+        <input name="mortgageID" type="text" placeholder="Mortgage ID" required><br>
+        <input type="submit">
+    </form>
+
+    <div class="success" id="mortgage-status-success"></div>
+
+</div>
+
+<script src="../common.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

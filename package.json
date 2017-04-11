@@ -1,0 +1,23 @@
+{
+  "name": "assn03",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon app.js | bunyan",
+    "dev:local": "NODE_ENV=local npm run dev",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.0",
+    "bunyan": "^1.8.5",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "mongodb": "^2.2.22",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
